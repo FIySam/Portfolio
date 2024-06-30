@@ -1,0 +1,115 @@
+﻿/* styles.css */
+
+body {
+    background-color: lightblue;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+p {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin-bottom: 20px; 
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+section {
+    width: 25%; 
+}
+
+p, ul {
+    border: 1px solid black;
+    padding: 5px;
+}
+.projects-section {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+}
+
+.project {
+    margin-bottom: 20px;
+    background-color:palegreen;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+    .project img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .project p {
+        line-height: 1.6;
+    }
+
+    .project a {
+        color: #007bff;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color:forestgreen;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+    button:hover {
+        background-color: #45a049;
+    }
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+
+    .socials li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .socials img {
+        width: 30px;
+        height: auto;
+    }
