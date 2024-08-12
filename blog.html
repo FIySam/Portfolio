@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>BLOG PAGE</title>
+    <link rel="stylesheet" href="StyleSheet2.css">
+</head>
+<body>
+    <h1>Welcome To My Blog</h1>
+    <div id="blog-list"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const blogList = document.getElementById('blog-list');
+
+            const posts = [
+                {
+                    "title": "Adding a Light/Dark Button Switcher",
+                    "content": "When implementing the button I had to consider the layout of my webpage and where would be the best spot to add the button. I decided the best place for the button was after the table of contents but before the introduction section that way useres can switch the theme to their prefrence before jumping into the content."
+                },
+                {
+                    "title": "Creating my Blog Section",
+                    "content": "Creating my blog section was challenging because I could not call my javascript in my html document so I had to embed the code into my HTML document for it to run correctly."
+                }
+            ];
+
+            posts.forEach(post => {
+                const postElement = document.createElement('div');
+                postElement.className = 'blog-post';
+
+                const titleElement = document.createElement('h2');
+                titleElement.textContent = post.title;
+                postElement.appendChild(titleElement);
+
+                const contentElement = document.createElement('p');
+                contentElement.textContent = post.content;
+                postElement.appendChild(contentElement);
+
+                blogList.appendChild(postElement);
+            });
+        });
+    </script>
+</body>
+</html>

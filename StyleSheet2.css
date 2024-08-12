@@ -1,0 +1,68 @@
+﻿
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS';
+    line-height: 1.6;
+    background-color: aqua;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#blog-list {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+}
+
+.blog-post {
+    background-color: aliceblue;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1 1 45%;
+    max-width: 45%; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    .blog-post h2 {
+        color: black;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .blog-post p {
+        margin-bottom: 10px;
+    }
+
+    
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    #blog-list {
+        flex-direction: column; 
+    }
+
+    .blog-post {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+        .blog-post h2 {
+            font-size: 20px;
+        }
+}
